@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6" style="background-color:azure">
+        
+            <div class="form-group">
+                <label style="margin-top: 20px;padding-bottom: 20px; font-size: 20px;">Title:</label>
+                <input type="text" placeholder="Enter title of the video" class="form-control" name="title" id="title" #title (change)="getTitle(title.value)">
+            </div>
+            <div class="form-group">
+                <label style="margin-top: 20px;padding-bottom: 20px; font-size: 20px;">Publisher:</label>
+                <input  type="text" placeholder="Enter publisher of the video" class="form-control" name="publisher" #publisher (change) ="getPublisher(publisher.value)">
+            </div>
+            <div class="form-group">
+                <label style="margin-top: 20px;padding-bottom: 20px; font-size: 20px;">Producer:</label>
+                <input   type="text" placeholder="Enter producer of the video" class="form-control" name="producer" #producer (change) ="getProducer(producer.value)">
+            </div>
+            <div class="form-group">
+                <label style="margin-top: 20px;padding-bottom: 20px; font-size: 20px;">Genre:</label>
+                <input  type="text" placeholder="Enter genre of the video" class="form-control" name="genre" #genre (change)="getGenre(genre.value)">
+            </div>
+            <div class="form-group">
+                <label style="margin-top: 20px;padding-bottom: 20px; font-size: 20px;">Age Rating:</label>
+                <input  type="text" placeholder="Enter age rating for the video" class="form-control" name="age_rating" #age_rating (change)="getAgeRating(age_rating.value)">
+            </div>
+            <div class="form-group">
+                <label style="margin-top: 20px;padding-bottom: 20px; font-size: 20px;">File to Upload:</label>
+                <input type="file" class="form-control" name="File" id="File" (change)="getFile($event)">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="button" value ="Submit" class="btn btn-primary btn-lg" (click)="submitData()">
+            </div>
+       
+    </div>
+    
+</div>

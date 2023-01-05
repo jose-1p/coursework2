@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-4">
+        <form>
+            <input type="text" class="form-control" placeholder="Search video by title">
+            <input type="submit" value="Search" class="btn btn-lg">
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-4">
+        <table>
+            <tr>
+                <td *ngFor ="let video of  videoDetails">
+                    <video src="{{video.url}}" width="400" controls></video><br>
+                    <p style="background-color: aliceblue;">Title:{{video.name}}</p>
+                </td>
+            </tr>
+        </table> 
+    </div>
+</div>
+
